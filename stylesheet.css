@@ -33,20 +33,28 @@ body {
   display: flex;
   text-align: center;
   padding: 0px;
-  margin:0px;
+  margin: 0px 0px 10px 0px;
 }
 
 #nav li {
   width: 20%;
 }
+#nav li h4 {
+  margin: 10px;
+  padding: 0px;
+  
+  
+}
 #nav li a{
+  height: 39.5px;
   display: inline-block;
   border: 1px solid black;
   background-color: aqua;
-  height: 30px;
+
   width: 100%;
   text-decoration:dashed;
-  padding: 10px 0px 0px ;
+  margin: auto;
+  padding: auto ;
 }
 #nav li a:hover {
   transform: scale(1.05);
@@ -66,7 +74,7 @@ body {
 }
 #main img {
   width: 40%;
-  padding: 0px 5px 0px 5px ;
+  padding: auto;
 }
 #main p {
   padding: 0px;
@@ -90,30 +98,50 @@ body {
 }
 #side {
   width: 30%;
-  background-color: rgb(175, 173, 169);
+  background-color: rgb(237, 236, 235);
 }
-#side h1 {
+#side h1{
   text-align: center;
-  background-image: url(./images/side_box_h2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 20px;
+  margin: 10px 0px 0px 0px;
+  padding: 8px;
+  background: url(/images/side_box_h2.png) center no-repeat;
+}
+#side .box {
+  height: auto;
+  margin: auto;
+  width: 80%;
+	margin: 0 auto 30px auto;
+	padding: 0 0 20px 0;
+  background: url(/images/side_box.png) bottom no-repeat ;
+}
+#side .box:hover{
+  transform: scale(1.03);
+}
+#side .box ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+  background-color: aliceblue;
+}
+#side .box ul li {
+  padding: 5px;
+  border-bottom: 1px solid silver;
+}
+#side .box ul li:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#footer {
+  background-color: aqua;
+  clear: both;
+	font-weight: bold;
+
+  padding: 3ßpx 0px;
 
 }
-#side ul {
-  position: relative;
-}
-#side li {
-  font-size: 16px;
-  align-items: center;
-  list-style-type: none;
-  background-color: rgb(196, 255, 249);
-  margin: 1px 0px 1px 0px;
-  padding: 1px;
-  border-style: 1px solid black;
-  width: 90%
-}
-#side li h4 {
-  padding:0px;
-  margin: 3px;
+#footer p{
+  margin: 0px;
+  height: 100%;
+  padding: 5px 0px;
+  text-align: center;
+  font-size:  16px;
 }
